@@ -114,9 +114,9 @@ body {
 .button-start,
 .button-operational,
 .button-development {
-  background-color: #dddddd; /* Grey background */
-  color: #333333; /* Text color */
-  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #dddddd;
+  color: #333333;
+  padding: 10px 20px;
   cursor: pointer;
   width: 150px;
   height: 30px;
@@ -147,10 +147,10 @@ body {
 }
 
 .button-development:hover,
-  .button-start:hover,
-  .button-operational:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
+.button-start:hover,
+.button-operational:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .main {
@@ -164,7 +164,6 @@ body {
   /* display: flex; */
   justify-content: center;
 }
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 .text-panels-1-2 {
   list-style: none;
   margin: 0;
@@ -188,10 +187,9 @@ body {
 }
 
 #text-panel-1 {
-  background-size: cover; /* Adjust background size as needed */
-  background-position: center; /* Center the background image */
+  background-size: cover;
+  background-position: center;
   padding: 20px;
-  /* box-sizing: border-box; */
   width: 50%;
   height: 315px;
   flex: 1;
@@ -205,8 +203,8 @@ body {
 }
 
 #text-panel-2 {
-  background-size: cover; /* Adjust background size as needed */
-  background-position: center; /* Center the background image */
+  background-size: cover;
+  background-position: center;
   padding: 20px;
   width: 50%;
   height: 315px;
@@ -227,7 +225,6 @@ body {
   line-height: 22px;
   font-weight: bold;
 }
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 .text-panel-3 {
   width: 100%;
@@ -269,8 +266,6 @@ body {
   margin-bottom: -15px;
 }
 
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-
 .text-panels-4-5 {
   list-style: none;
   margin: 0;
@@ -294,10 +289,10 @@ body {
 }
 
 #text-panel-4 {
-  background-size: cover; /* Adjust background size as needed */
-  background-position: center; /* Center the background image */
+  background-size: cover;
+  background-position: center;
   padding: 20px;
-  /* box-sizing: border-box; */
+
   width: 50%;
   height: 315px;
   flex: 1;
@@ -311,8 +306,8 @@ body {
 }
 
 #text-panel-5 {
-  background-size: cover; /* Adjust background size as needed */
-  background-position: center; /* Center the background image */
+  background-size: cover;
+  background-position: center;
   padding: 20px;
   width: 50%;
   height: 315px;
@@ -333,8 +328,6 @@ body {
   line-height: 22px;
   font-weight: bold;
 }
-
-/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 .text-panel-6 {
   width: 100%;
@@ -388,7 +381,7 @@ body {
 .footer-name {
   font: Inter;
   color: #ffffff;
-  /* font-size: 60; */
+
   font-size: 2.5em;
   font-weight: lighter;
   letter-spacing: 15px;
