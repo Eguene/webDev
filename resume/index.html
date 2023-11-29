@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- normalize.css дозволяє прибрати специфічні для браузера елементи стилі та проблеми узгодженості, наприклад, невеликі пробіли знизу та зправа сторінки, які не прибрати просто так -->
+    <link rel="stylesheet" href="./css/normalize.css" /> 
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- блок з фото, "ім'ям", назвою університету та контактами -->
+    <div class="main-container"> 
+      <div class="container">
+        <div id="portrait">
+            <!-- До зображень необхідно додавати атрибут alt, який буде відображатися у випадку, коли зображення не вдалося завантажити -->
+            <img src="./img/photo.jpg" alt="My Photo" id="photo"/>
+            <!-- &#x2191 - це код, за яким html ставить символ стрілки вгору ↑ -->
+            <p id="portrait-name">Only Human &#x2191</p>
+            <p id="portrait-edu">State University of Trade and Economics</p>
+            <!-- hr створює горизонтальну лінію -->
+            <hr id="portrait-line">
+            <div id="portrait-contacts">
+                <!-- &nbsp; - код, який html сприймає, як пробіл -->
+                <!-- span дозволяє виділити слово/речення усередині тексту. не перериваючи цей текст -->
+            <p><span id="contact-tel">C:&nbsp;</span> <a href="tel:+380962700191" id="tel">+38 096 270 01 91</a></p>
+            <p><span id="contact-email">E:&nbsp;</span> <a href="mailto:Y.Davydov.FIT.122.20@knute.edu.ua" id="email">Y.Davydov.FIT.122.20@knute.edu.ua</a></p>
+        </div>
+    </div>
+
+    <!-- блок з ім'ям, інформацією та списком проектів -->
+        <div id="info">
+            <div id="info-name-div">
+                <h1 id="info-name">Only Human</h1>
+            </div>
+            <hr id="info-line">
+            <p id="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <hr id="info-projects-line">
+            <div id="projects-header">
+                <h1 id="info-name">Projects</h1>
+            </div>
+            <!-- ul - unordered list - список, в якому об'єкти не позначаються порядковими номерами, а лише крапками -->
+            <ul>
+                <!-- Кожен об'єкт може вміщати в себе що завгодно, від зображення до посилання -->
+                <li class="projects-ul-item"><a href="https://hellen.p.goit.global/" class="link"><span class="projects-link">https://hellen.p.goit.global/</span></a><span class="link-desc">................ [ HTML5, CSS3 ]</span></li>
+                <li class="projects-ul-item"><a href="https://cryptohub.p.goit.global/" class="link"><span class="projects-link">https://cryptohub.p.goit.global/</span></a><span class="link-desc">.......... [ JavaScript ]</span></li>
+                <li class="projects-ul-item"><a href="https://kidslike.p.goit.global/" class="link"><span class="projects-link">https://kidslike.p.goit.global/</span></a><span class="link-desc">..............[ React.js, Node.js ]</span></li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- блок з переліком tech-skills -->
+        <div id="tech-skills">
+            <h1 id="tech-header">Tech skills</h1>
+            <hr id="tech-line">
+            <div id="tech-list">
+                <ul class="tech-list-ul">
+                    <li class="tech-list-li">HTML5</li>
+                    <li class="tech-list-li">CSS3</li>
+                    <li class="tech-list-li">GIT</li>
+                </ul>
+                <ul class="tech-list-ul">
+                    <li class="tech-list-li">C#</li>
+                    <li class="tech-list-li">Python</li>
+                    <li class="tech-list-li">C++</li>
+                </ul>
+                <ul class="tech-list-ul">
+                    <li class="tech-list-li">JavaScript</li>
+                    <li class="tech-list-li">React.JS</li>
+                    <li class="tech-list-li">Node.JS</li>
+                </ul>
+            </div>
+        </div>
+<!-- блок з переліком soft-skills -->
+        <div id="soft-skills">
+            <h1 id="soft-header">Soft skills</h1>
+            <hr id="soft-line">
+            <div id="soft-list">
+                <ul class="soft-list-ul">
+                    <li class="soft-list-li">Scrum</li>
+                    <li class="soft-list-li">Agile</li>
+                </ul>
+                <ul class="soft-list-ul">
+                    <li class="soft-list-li">GTD</li>
+                    <li class="soft-list-li">Teamwork</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <!-- блок з переліком корисного досвіду -->
+      <div id="experience">
+        <h1 id="exp-header">Work experience</h1>
+        <div id="exp-list">
+            <ul class="exp-ul">
+                <li class="exp-li" id="exp-name-1">Front-End Developer <span id="prof1">Freelance</span></li>
+                <li class="exp-li" id="exp-time-1">September 2021 - up to now | Multiregion</li>
+                <li class="exp-li" id="exp-desc-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="exp-li" id="exp-desc-2">Ut enim ad minim veniam, exercitation ullamco laboris.</li>
+            </ul>
+            <ul class="exp-ul">
+                <li class="exp-li" id="exp-name-2">Visual Designer/HTML+CSS Developer <span id="prof2">Miraicom</span></li>
+                <li class="exp-li" id="exp-time-2">March 2020 - September 2020 | Ukraine</li>
+                <li class="exp-li" id="exp-desc-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li class="exp-li" id="exp-desc-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+            </ul>
+        </div>
+      </div>
+      <!-- блок з переліком пройдених навчальних програм та курсів -->
+      <div id="education">
+        <h1 id="edu-header">Education</h1>
+        <div id="edu-list1">
+            <ul class="edu-ul">
+                <li class="edu-li" id="big1">Bachelor`s degree</li>
+                <!-- Так, я використав декілька символів пробілу поспіль. Виглядяає жахливо, але працює, як потрібно) -->
+                <li class="edu-li" id="smol1">Speciality:&nbsp&nbspComputer Science</li>
+                <li class="edu-li" id="smol2">University: SUTE</li>
+                <li class="edu-li" id="smol3">Time:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp09.2020 - 05.2024</li>
+            </ul>
+            <ul class="edu-ul">
+                <li class="edu-li" id="big2">Fullstack Developer Course</li>
+                <li class="edu-li" id="smol4">Speciality:&nbsp&nbspWeb Development</li>
+                <li class="edu-li" id="smol5">Time:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp01.2024 - 01.2025</li>
+            </ul>
+            <ul class="edu-ul">
+                <li class="edu-li" id="big3">Back-End Developer Course</li>
+                <li class="edu-li" id="smol6">Speciality:&nbsp&nbspWeb Development</li>
+                <li class="edu-li" id="smol7">Time:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp09.2023 - 01.2024</li>
+            </ul>
+        </div>
+        <div id="edu-list2">
+            <ul class="edu-ul">
+                <li class="edu-li" id="big4">Master`s degree</li>
+                <li class="edu-li" id="smol8">Speciality:&nbsp&nbspComputer Science</li>
+                <li class="edu-li" id="smol9">University: SUTE</li>
+                <li class="edu-li" id="smol10">Time:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp09.2024 - 05.2026</li>
+            </ul>
+            <ul class="edu-ul">
+                <li class="edu-li" id="big5">Front-End Developer Course</li>
+                <li class="edu-li" id="smol11">Speciality:&nbsp&nbspWeb Development</li>
+                <li class="edu-li" id="smol12">Time:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp05.2023 - 09.2023</li>
+            </ul>
+            <ul class="edu-ul">
+                <li class="edu-li" id="big6">Data Analyst Course</li>
+                <li class="edu-li" id="smol13">Speciality:&nbsp&nbspPython</li>
+                <li class="edu-li" id="smol14">Time:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp01.2024 - 06.2024</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

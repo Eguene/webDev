@@ -1,0 +1,412 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #202020;
+  color: #ffffff;
+  /* margin регулює зовнішні відступи від об'єкту, padding - внутрішні */
+  margin: 0;
+  padding: 0;
+  /* display визначає, як будуть розташовуватися дочірні об'єкти, наприклад, при значенні block контент у середині блоку буде розташований вертикально один за одним,
+  а при значенні flex - горизонтально один біля одного, якщо є місце*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* vh - viewport height  */
+  min-height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#portrait {
+  background-color: #4f4f4f;
+  max-height: 430px;
+  height: 430px;
+  width: 300px;
+  border: 2px solid #555555;
+
+  text-align: center;
+  align-items: center;
+}
+
+#info {
+  background-color: #404040;
+  height: 430px;
+  width: 700px;
+  border: 2px solid #555555;
+
+  text-align: center;
+  align-items: center;
+}
+
+#tech-skills {
+  background-color: #404040;
+  height: 170px;
+  width: 550px;
+  border: 2px solid #555555;
+}
+
+#soft-skills {
+  background-color: #4f4f4f;
+  height: 170px;
+  width: 450px;
+  border: 2px solid #555555;
+}
+
+#experience {
+  background-color: #404040;
+  height: 190px;
+  width: 1000px;
+  border: 2px solid #555555;
+}
+
+#education {
+  background-color: #404040;
+  height: 340px;
+  width: 1000px;
+  border: 2px solid #555555;
+}
+
+#photo {
+  margin-top: 17px;
+  border: 2px solid #fff4f4;
+}
+
+#portrait-name {
+  font-weight: 500;
+  font-size: large;
+  margin-top: -1px;
+}
+
+#portrait-edu {
+  font-weight: 500;
+  font-size: small;
+  width: 310px;
+  margin-top: -15px;
+  margin-left: -7px;
+}
+
+#portrait-contacts {
+  text-align: left;
+}
+
+#portrait-line {
+  width: 280px;
+}
+
+#contact-tel {
+  margin-top: -25px;
+  margin-left: 30px;
+  margin-bottom: -120x;
+  color: #939191;
+  font-weight: 600;
+  font-size: 24;
+}
+
+#tel {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: small;
+  font-weight: 500;
+}
+
+#contact-email {
+  margin-left: 30px;
+  color: #939191;
+  font-weight: 600;
+  font-size: 24;
+}
+
+#email {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: small;
+  font-weight: 500;
+}
+
+#info-name-div {
+  text-align: left;
+}
+
+#info-name {
+  margin-left: 50px;
+  font-size: 3.5em;
+  font-weight: 600;
+  margin-bottom: -5px;
+}
+
+#info-line {
+  width: 600px;
+}
+
+#info-text {
+  text-align: left;
+  margin-left: 50px;
+  width: 600px;
+  font-weight: 300;
+}
+
+#info-projects-line {
+  border: 1px solid #555555;
+}
+
+#projects-header {
+  text-align: left;
+}
+
+#info-name {
+  font-size: 2.3em;
+  margin-bottom: 20px;
+}
+
+.projects-ul-item {
+  text-align: left;
+  padding-top: 5px;
+  margin-left: 30px;
+  font-weight: 500;
+  color: #939191;
+}
+
+.projects-link {
+  color: #ffffff;
+}
+
+.link {
+  text-decoration: none;
+}
+
+#tech-skills {
+  text-align: center;
+  align-items: center;
+}
+
+#tech-header {
+  margin-bottom: -5px;
+}
+
+#tech-list {
+  display: flex;
+  justify-content: center;
+}
+
+#tech-line {
+  width: 360px;
+}
+
+.tech-list-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-list-li {
+  margin: 0 10px;
+  border-left: 2px solid #939191;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#soft-skills {
+  text-align: center;
+  align-items: center;
+}
+
+#soft-header {
+  margin-bottom: -5px;
+}
+
+#soft-list {
+  display: flex;
+  justify-content: center;
+}
+
+#soft-line {
+  width: 360px;
+}
+
+.soft-list-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.soft-list-li {
+  margin: 0 10px;
+  border-left: 2px solid #939191;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#experience {
+  text-align: left;
+  width: 1004px;
+}
+
+#exp-header {
+  margin-left: 50px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 2.3em;
+}
+
+#exp-list {
+  display: flex;
+  justify-content: center;
+}
+
+.exp-ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-li {
+  margin: 0 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  margin-left: 50px;
+  font-weight: 500;
+  list-style: none;
+}
+
+#prof1,
+#prof2 {
+  color: #e1c741;
+  font-weight: 600;
+}
+
+#exp-name-1,
+#exp-name-2 {
+  margin-bottom: -1px;
+}
+
+#exp-time-1,
+#exp-time-2 {
+  color: #939191;
+  font-size: small;
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+#exp-desc-1,
+#exp-desc-2,
+#exp-desc-3,
+#exp-desc-4 {
+  margin-bottom: 2px;
+  width: 415px;
+  height: 16px;
+  font-size: small;
+}
+
+#education {
+  text-align: center;
+  width: 1004px;
+}
+
+#edu-list1,
+#edu-list2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.edu-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.edu-li {
+  color: #ffffff;
+  text-align: left;
+}
+
+.edu-ul li:not(:first-child) {
+  list-style-type: none;
+}
+
+#big1,
+#big2,
+#big3,
+#big4,
+#big5,
+#big6 {
+  margin-bottom: 8px;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+#smol1,
+#smol2,
+#smol3,
+#smol4,
+#smol5,
+#smol6,
+#smol7,
+#smol8,
+#smol9,
+#smol10,
+#smol11,
+#smol12,
+#smol13,
+#smol14 {
+  list-style: none;
+  color: #939191;
+  font-size: small;
+}
+
+#big4,
+#big5,
+#big6 {
+  margin-top: 20px;
+}
+
+#big4,
+#smol8,
+#smol9,
+#smol10 {
+  margin-left: -85px;
+}
+
+#big5,
+#smol11,
+#smol12 {
+  margin-left: 20px;
+}
+
+#big6,
+#smol13,
+#smol14 {
+  margin-left: -5px;
+}
+
+#education,
+#experience {
+  max-width: 1004px;
+  width: 100%;
+}
+
+#portrait,
+#info,
+#tech-skills,
+#soft-skills,
+#experience,
+#education {
+  background-color: #404040;
+  border: 2px solid #555555;
+  box-sizing: border-box;
+}
