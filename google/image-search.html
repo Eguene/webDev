@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <link rel="stylesheet" href="./css/style-image.css" />
+  </head>
+  <body>
+    <div id="nav-container">
+    <ul id="nav">
+      <li id="search-page">
+        <a href="./index.html"><button>Search</button></a>
+      </li>
+      <li id="image-page">
+        <a href="./image-search.html"><button>Image search</button></a>
+      </li>
+      <li id="advanced-page">
+        <a href="./advanced-search.html"><button>Advanced Search</button></a>
+      </li>
+    </ul>
+</div>
+
+    <div id="content">
+      <h1 id="google">Google</h1>
+      <h3 id="search-type">Image search</h3>
+
+      <!-- форма для пошуку, необхідна, щоб пошук працював, id - просто id, action - сторінка, до якох будуть направлені дані -->
+      <form id="search" action="https://www.google.com/search">
+        <!-- type вказує тип даних, що приймає рядок, name необхідний, щоб пошук виконувався -->
+      <input type="text" id="search-bar" name="q" placeholder="Search...">
+      <!-- isch каже браузеру, що треба одразу відкрити вкладку зображень -->
+      <input type="hidden" name="tbm" value="isch">
+      <!-- type необхідний, щоб пошук запускався-->
+      <button type="submit" id="search-button">Search</button>
+    </form>
+
+    </div>
+  </body>
+</html>
